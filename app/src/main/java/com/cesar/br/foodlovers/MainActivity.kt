@@ -1,10 +1,9 @@
 package com.cesar.br.foodlovers
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cesar.br.foodlovers.adapter.FoodAdapter
@@ -16,7 +15,6 @@ import kotlin.random.Random
 class MainActivity : AppCompatActivity() {
     companion object {
         const val MAIN_ACTIVITY_FOOD_EXTRA_ID = "FOOD_EXTRA_ID"
-        const val MAIN_ACTIVITY_FOOD_STATE = "FOOD_STATE"
         const val LAUNCH_SECOND_ACTIVITY_REQUEST_CODE = 1
     }
 
@@ -70,7 +68,7 @@ class MainActivity : AppCompatActivity() {
             val type = foodsSpinner.selectedItem.toString()
             val name = editFoodName.text.toString()
 
-            if (isNameValid(name)) {
+            if (name.isNotEmpty()) {
                 val price = Random.nextDouble(1.0, 30.0)
                 val typeIndex = resources.getStringArray(R.array.food_types).indexOf(type)
                 val food = Food(mFoodList.lastIndex + 1, type, name, price, 1, typeIndex)
@@ -85,6 +83,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
-    private fun isNameValid(name: String): Boolean = !name.isNullOrEmpty()
 }

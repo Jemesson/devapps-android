@@ -1,8 +1,8 @@
 package com.cesar.br.foodlovers
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.cesar.br.foodlovers.domain.Food
 import kotlinx.android.synthetic.main.activity_food_detail.*
 import java.util.*
@@ -36,9 +36,11 @@ class FoodDetailActivity : AppCompatActivity() {
 
     private fun handlePressSave(food: Food?) {
         btnSave.setOnClickListener {
-            val price = if (edtFoodPrice.text.isNullOrEmpty()) 1.0 else edtFoodPrice.text.toString()
-                .toDouble()
-            val qtd = if (edtFoodQt.text.isNullOrEmpty()) 1 else edtFoodQt.text.toString().toInt()
+            val price = if (edtFoodPrice.text.isNullOrEmpty()) 1.0
+                        else edtFoodPrice.text.toString().toDouble()
+
+            val qtd = if (edtFoodQt.text.isNullOrEmpty()) 1
+                      else edtFoodQt.text.toString().toInt()
 
             if (food != null) {
                 food.price = price
