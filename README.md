@@ -1,5 +1,5 @@
 ## Food Lovers Application 🍕 🍔
-This is the repository for dev-apps android course.
+This is the repository for DevApps android course.
 
 ## Goals
 - The Food Lovers' Android app handles the meals that the user most like.
@@ -16,7 +16,7 @@ This is the repository for dev-apps android course.
 6. Seafood
 
 ## Internationalization (i18n)
-- You can test the app in English and Portuguese.
+You can test the app in English and Portuguese.
 
 ## Demo
 [![Watch the video](https://www.svgimages.com/svg-image/s7/food-lover-logo-256x256.png)](https://youtu.be/aKTBYPVYvNw)
