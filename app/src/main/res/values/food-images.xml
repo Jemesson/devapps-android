@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<array name="food_images">
+		<item>@drawable/hamburger</item>
+		<item>@drawable/sushi</item>
+		<item>@drawable/pizza</item>
+		<item>@drawable/meat</item>
+		<item>@drawable/salad</item>
+		<item>@drawable/fish</item>
+	</array>
+</resources>

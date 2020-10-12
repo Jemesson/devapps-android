@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="food_types">
+		<item>@string/food_fast_food</item>
+		<item>@string/food_japanese</item>
+		<item>@string/food_italian</item>
+		<item>@string/food_brazilian</item>
+		<item>@string/food_vegetarian</item>
+		<item>@string/food_sea</item>
+	</string-array>
+</resources>
