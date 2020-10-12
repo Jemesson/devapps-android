@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">foodlovers</string>
+    <string name="food_fast_food" translatable="false">Fast Food</string>
+    <string name="food_empty">Food is required</string>
+    <string name="food_japanese">Japanese</string>
+    <string name="food_brazilian">Brazilian</string>
+    <string name="food_italian">Italian</string>
+    <string name="food_vegetarian">Vegetarian</string>
+    <string name="food_sea">Seafood</string>
+    <string name="food_name_hint">Type the food name</string>
+    <string name="saveFood">Save</string>
+    <string name="food_type">Food type</string>
+    <string name="food_name">Food name</string>
+    <string name="food_price">Price</string>
+    <string name="food_qt">Quantity</string>
+    <string name="food_subtotal">$: %1$s</string>
+    <string name="food_removed">Food: %1$s deleted</string>
+</resources>

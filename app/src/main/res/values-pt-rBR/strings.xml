@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="food_empty">Comida é obrigatório</string>
+    <string name="food_name_hint">Tais com fome de que?</string>
+    <string name="food_japanese">Japonesa</string>
+    <string name="food_brazilian">Brasileira</string>
+    <string name="food_italian">Italiana</string>
+    <string name="food_vegetarian">Vegetariana</string>
+    <string name="food_sea">Frutos do Mar</string>
+    <string name="saveFood">Salvar</string>
+    <string name="food_type">Tipo</string>
+    <string name="food_price">Preço</string>
+    <string name="food_name">Nome</string>
+    <string name="food_qt">Quantidade</string>
+    <string name="food_subtotal">R$: %1$s</string>
+    <string name="food_removed">Comida: %1$s removida</string>
+</resources>
