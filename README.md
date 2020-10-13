@@ -20,3 +20,12 @@ You can test the app in English and Portuguese.
 
 ## Demo
 [![Watch the video](https://www.svgimages.com/svg-image/s7/food-lover-logo-256x256.png)](https://youtu.be/aKTBYPVYvNw)
+
+## Screenshots
+
+
+![Pizza Added](https://user-images.githubusercontent.com/6642169/95801292-47aa3500-0cd0-11eb-8bfd-12eba7ea899b.png)
+
+![Pizza detail](https://user-images.githubusercontent.com/6642169/95801295-4973f880-0cd0-11eb-9189-a5acfb490d1f.png)
+
+![Tomato deleted](https://user-images.githubusercontent.com/6642169/95801296-4a0c8f00-0cd0-11eb-8ea1-aba13f7b2e54.png)
