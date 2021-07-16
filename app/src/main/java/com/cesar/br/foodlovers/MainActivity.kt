@@ -1,6 +1,7 @@
 package com.cesar.br.foodlovers
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        if (getFoodBackground() != "") {
+            constraintLayout.setBackgroundColor(Color.BLUE)
+        }
 
         setupRecyclerView()
         pressAddButton()
@@ -81,6 +86,15 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, getString(R.string.food_empty), Toast.LENGTH_SHORT).show()
             }
+        }
+    }
+
+    private fun getFoodBackground(): String {
+        return Class.forName("android.os.SystemProperties").let {
+            it.getDeclaredMethod(
+                "get",
+                String::class.java
+            ).invoke(null, "food.background") as String
         }
     }
 }
