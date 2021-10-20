@@ -8,6 +8,11 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Unit tests
+          command: ./gradlew testDebugUnitTest
+      - store_test_results:
+          path: app/build/test-results
+      - run:
           name: Lint
           command: ./gradlew lint
       - store_artifacts:
