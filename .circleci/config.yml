@@ -8,6 +8,12 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Lint
+          command: ./gradlew lint
+      - store_artifacts:
+          path: app/build/reports
+          destination: reports
+      - run:
           name: Assemble build release
           command: ./gradlew assembleRelease
 
