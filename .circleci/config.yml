@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  android: circleci/android@1.0.3
+jobs:
+  build:
+    executor:
+      name: android/android-machine
+    steps:
+      - checkout
+      - run:
+          name: Assemble build release
+          command: ./gradlew assembleRelease
+
+workflows:
+  myworkflow:
+    jobs:
+      - build
