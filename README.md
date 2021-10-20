@@ -1,4 +1,4 @@
-## Food Lovers Application 🍕 🍔
+## Food Lovers Application 🍕 🍔 [![Coverage Status](https://coveralls.io/repos/github/Jemesson/devapps-android/badge.svg?branch=and_add_code_coverage_circleci)](https://coveralls.io/github/Jemesson/devapps-android?branch=and_add_code_coverage_circleci)
 This is the repository for DevApps android course.
 
 ## Goals
