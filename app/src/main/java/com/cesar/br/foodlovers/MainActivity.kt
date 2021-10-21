@@ -74,9 +74,15 @@ class MainActivity : AppCompatActivity() {
             val name = editFoodName.text.toString()
 
             if (name.isNotEmpty()) {
-                val price = Random.nextDouble(1.0, 30.0)
-                val typeIndex = resources.getStringArray(R.array.food_types).indexOf(type)
-                val food = Food(mFoodList.lastIndex + 1, type, name, price, 1, typeIndex)
+                val imagePos = resources.getStringArray(R.array.food_types).indexOf(type)
+                val food = Food(
+                    id = mFoodList.lastIndex + 1,
+                    type = type,
+                    name = name,
+                    quantity = 1,
+                    price = Food.calculateRandomPrice(),
+                    img = imagePos
+                )
 
                 mFoodList.add(food)
                 mFoodAdapter.notifyItemInserted(mFoodList.lastIndex)
