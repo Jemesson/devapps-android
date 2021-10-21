@@ -30,28 +30,10 @@ class FoodUnitTest {
     }
 
     @Test
-    fun `When a food is created, the price is zero`(){
-        val zeroPrice = 0.0
-        val food = Food(type = "xablau", name = "xablau")
-
-        assert(food.price == zeroPrice)
-    }
-
-    @Test
     fun `When a food is created, the quantity is zero`(){
         val zeroQuantity = 0
         val food = Food(type = "xablau", name = "xablau")
 
-        assert(food.quantity == zeroQuantity)
-    }
-
-    @Test
-    fun `When a food is created, the price and quantity are zero`(){
-        val zeroPrice = 0.0
-        val zeroQuantity = 0
-        val food = Food(type = "xablau", name = "xablau")
-
-        assert(food.price == zeroPrice)
         assert(food.quantity == zeroQuantity)
     }
 
@@ -61,5 +43,30 @@ class FoodUnitTest {
         val food = Food(type = "xablau", name = "xablau")
 
         assert(food.quantity == imgCounter)
+    }
+
+    @Test
+    fun `When a food is created, the price value must be between 1 and 30`(){
+        val food = Food(
+            type = "xablau",
+            name = "xablau",
+            price = Food.calculateRandomPrice()
+        )
+
+        assert(food.price in 1.0..30.0)
+    }
+
+
+    @Test
+    fun `When a food price changes, the total price must multiply with the quantity`(){
+        val total = 60.0
+        val food = Food(
+            type = "xablau",
+            name = "xablau",
+            price = 30.0,
+            quantity = 2
+        )
+
+        assert(food.calculateTotalPrice() == total)
     }
 }

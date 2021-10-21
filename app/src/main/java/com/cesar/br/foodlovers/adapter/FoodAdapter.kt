@@ -43,7 +43,7 @@ class FoodAdapter(private val context: Context,
 		holder.textFoodName.text = food.name
 
 		Locale.setDefault(Locale.US)
-		val subTotal = String.format("%.2f", food.price.times(food.quantity))
+		val subTotal = String.format("%.2f", food.calculateTotalPrice())
 		holder.textFoodPrice.text = context.getString(R.string.food_subtotal, subTotal)
 	}
 
