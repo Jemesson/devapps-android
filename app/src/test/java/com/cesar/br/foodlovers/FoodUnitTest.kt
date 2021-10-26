@@ -6,14 +6,6 @@ import org.junit.Test
 class FoodUnitTest {
 
     @Test
-    fun `When a food is created, the id is 1`(){
-        val firstId = 1;
-        val food = Food(type = "xablau", name = "xablau")
-
-        assert(food.id == firstId)
-    }
-
-    @Test
     fun `When a food is created, the type cannot be null`(){
         val nullType = null
         val food = Food(type = "xablau", name = "")
